@@ -1,194 +1,666 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="9dbd-886d-b93f-25d2" name="Marcher Worlds" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="3e61-38bb-7baf-01b9" name="Squad Light" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="3e61-38bb-7baf-01b9" name="Ranger Fire Team" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc1-75ca-533d-b68f" type="max"/>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8fc1-75ca-533d-b68f" type="max"/>
       </constraints>
       <profiles>
-        <profile id="a9fa-efa1-48e0-36d3" name="Squad Light" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+        <profile id="a9fa-efa1-48e0-36d3" name="Ranger Fire Team" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
           <characteristics>
-            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15"/>
-            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424"/>
-            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e"/>
-            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775"/>
-            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63"/>
-            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474"/>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4503-541f-036f-528b" name="Battle Rifle" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="db6d-81ee-6790-522a" name="Null Detonator" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">6</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">-</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3009-1e53-9e4d-4fe6" name="Fusion Blade" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="4763-4119-47df-93af" name="SPIKE: Slip Displacer" hidden="false">
+          <description>Once per activation, this squad can spike to move up to 3&quot;.</description>
+        </rule>
+        <rule id="6a9c-2946-7d95-04b3" name="Battle Rifle: CHARGE: Mechanikal Optics" hidden="false">
+          <description>While this model is charged, this weapon gains +4 RNG.</description>
+        </rule>
+        <rule id="709e-e3ff-e15c-ebdd" name="Null Detonator: Nullifier" hidden="false">
+          <description>This weapon causes no damage. Instead clear 1 Arc from the unit or void gate hitby this weapon.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="ffa1-202f-983d-474c" name="New CategoryLink" hidden="false" targetId="58fb-2f56-1203-a39b" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9f4f-9d9b-6d71-cdab" name="Attachment" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="72b8-5392-f0be-685f" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5edb-e1d2-66e8-8398" name="Attachment" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
-              <characteristics>
-                <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15"/>
-                <characteristic name="MAT" typeId="d2df-faa0-57ea-7424"/>
-                <characteristic name="RAT" typeId="cd59-8434-9446-2b1e"/>
-                <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775"/>
-                <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63"/>
-                <characteristic name="Damage" typeId="ed3e-a87a-0437-9474"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="c632-416c-1939-672a" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18be-e740-ac78-e676" name="Squad Heavy" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="18be-e740-ac78-e676" name="Ranger Heavy Support" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e25-8f6c-6def-9f4b" type="max"/>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5e25-8f6c-6def-9f4b" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4329-e85f-45f8-c335" name="Squad Heavy" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+        <profile id="4329-e85f-45f8-c335" name="Ranger Heavy Support" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
           <characteristics>
-            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15"/>
-            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424"/>
-            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e"/>
-            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775"/>
-            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63"/>
-            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474"/>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">4</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d22a-982c-ac2d-5b8c" name="Talon Rocket Launcher" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4bbc-6b46-4b34-0d07" name="Fusion Blade" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="c21e-b70b-e4a1-882e" name="SPIKE: Slip Displacer" hidden="false">
+          <description>Once per activation, this squad can spike to move up to 3&quot;.</description>
+        </rule>
+        <rule id="25dc-957a-8889-f074" name="Talon Rocket Launcher: Blast" hidden="false">
+          <description>This is a Blast Weapon.</description>
+        </rule>
+        <rule id="0b40-25cc-b3cb-5e0d" name="Talon Rocket Launcher: CHARGE: Targeter" hidden="false">
+          <description>While charged, this model can reroll ranged attack rolls with this weapon. A roll can be rerolled once as a result of Targeter.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="46fa-289d-8509-57a3" name="New CategoryLink" hidden="false" targetId="58fb-2f56-1203-a39b" primary="true"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="f34a-f408-efdd-2447" name="Attachment" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="7f65-dc68-98fa-d296" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="3966-af7e-9914-0475" name="Attachment" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
-              <characteristics>
-                <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15"/>
-                <characteristic name="MAT" typeId="d2df-faa0-57ea-7424"/>
-                <characteristic name="RAT" typeId="cd59-8434-9446-2b1e"/>
-                <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775"/>
-                <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63"/>
-                <characteristic name="Damage" typeId="ed3e-a87a-0437-9474"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="fdc6-2033-8a5f-134d" name="Squad" hidden="false" targetId="58fb-2f56-1203-a39b" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ed5a-b3ff-a3b3-6147" name="Weaver" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="ed5a-b3ff-a3b3-6147" name="Coalition Weaver" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae5-52e1-c089-bf55" type="max"/>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="bae5-52e1-c089-bf55" type="max"/>
       </constraints>
       <profiles>
-        <profile id="76bf-d101-ef5d-7b37" name="Weaver" hidden="false" typeId="7098-0d54-5d7a-9d51" typeName="Weaver">
+        <profile id="76bf-d101-ef5d-7b37" name="Coalition Weaver" hidden="false" typeId="7098-0d54-5d7a-9d51" typeName="Weaver">
           <characteristics>
-            <characteristic name="SPD" typeId="a3d5-84b7-8d74-55d2"/>
-            <characteristic name="MAT" typeId="8e04-a8c1-a6b7-84ff"/>
-            <characteristic name="RAT" typeId="d72a-87d4-0125-11f6"/>
-            <characteristic name="DEF" typeId="cd31-356b-e649-58aa"/>
-            <characteristic name="ARM" typeId="b2d4-c1e8-cd5b-0d13"/>
-            <characteristic name="FOC" typeId="c55d-7684-95d9-03df"/>
-            <characteristic name="Damage" typeId="411b-1469-aadc-5284"/>
+            <characteristic name="SPD" typeId="a3d5-84b7-8d74-55d2">6</characteristic>
+            <characteristic name="MAT" typeId="8e04-a8c1-a6b7-84ff">3</characteristic>
+            <characteristic name="RAT" typeId="d72a-87d4-0125-11f6">3</characteristic>
+            <characteristic name="DEF" typeId="cd31-356b-e649-58aa">4</characteristic>
+            <characteristic name="ARM" typeId="b2d4-c1e8-cd5b-0d13">3</characteristic>
+            <characteristic name="FOC" typeId="c55d-7684-95d9-03df">4</characteristic>
+            <characteristic name="Damage" typeId="411b-1469-aadc-5284">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6d60-1a36-f430-ac2d" name="Handgun" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3714-3bd0-5ce3-a113" name="Battle Staff" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="9f1c-ec5f-312d-15f7" name="CHARGE: Arcantrik Amplifier" hidden="false">
+          <description>While charged, this model can reroll ranged attack rolls with this weapon. A roll can be rerolled once as a result of Targeter.</description>
+        </rule>
+        <rule id="ba2b-b651-c88a-da04" name="Arc Relay [10]" hidden="false">
+          <description>This model can channel Fury Cyphers. A Fury Cypher channeled through this model is RNG 10.</description>
+        </rule>
+        <rule id="447c-a94b-439d-344f" name="SPIKE: Fury Reciprocator" hidden="false">
+          <description>When you channel a Fury Cypher through this model, after the attack is resolved, this model can spike to return the Cypher card to your hand.</description>
+        </rule>
+        <rule id="04d0-cfff-158b-2282" name="Battle Staff: Repulsor" hidden="false">
+          <description>When this model hits a model with an equal or smaller sized-base with an attack with this weapon, before damage is rolled, the model hit is slammed 3˝ directly away from this model. Collateral damage is equal to the POW of this weapon.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="ec87-f7f1-8d63-0c9e" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8358-2251-a4e5-fc3d" name="Duskwolf" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8358-2251-a4e5-fc3d" name="Dusk Wolf" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f5c-04c6-40b2-b828" type="max"/>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1f5c-04c6-40b2-b828" type="max"/>
       </constraints>
       <profiles>
         <profile id="3df5-0f49-56a7-d8f4" name="Duskwolf" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
           <characteristics>
-            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789"/>
-            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6"/>
-            <characteristic name="MAT" typeId="82d5-1273-1574-20d5"/>
-            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0"/>
-            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064"/>
-            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9"/>
-            <characteristic name="Damage" typeId="81df-f62a-bbad-248e"/>
-            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e"/>
+            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789">5</characteristic>
+            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6">4</characteristic>
+            <characteristic name="MAT" typeId="82d5-1273-1574-20d5">4</characteristic>
+            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0">4</characteristic>
+            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064">3</characteristic>
+            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9">4</characteristic>
+            <characteristic name="Damage" typeId="81df-f62a-bbad-248e">3</characteristic>
+            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e">5</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="9b73-68fa-3fba-0370" name="CHARGE: Arcantrik Turbine" hidden="false">
+          <description>This model gains +1 SPD for each Arc it is currently charged with.</description>
+        </rule>
+        <rule id="36ae-ec58-293b-e206" name="SPIKE: Slip Displacer" hidden="false">
+          <description>Once per activation, this model can spike to move up to 3&quot;.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="45e2-c149-f1d1-4b1e" name="New CategoryLink" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3052-c8f4-70d1-1ce1" name="CORTEX: Neural Net Cortex" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f6c8-7dd9-91db-1f81" name="Neural Net" hidden="false">
+              <description>This model gains a cumulative +1 DEF bonus for each other friendly unit within 5˝, up to a bonus of +3.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="76ed-343e-57e9-4dff" name="CORTEX: Scout Cortex" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="c9de-c7e9-02a9-4575" name="Pathfinder" hidden="false">
+              <description>This model ignores movement penalties for rough terrain.</description>
+            </rule>
+            <rule id="f740-57cc-2d73-d8e8" name="CHARGE: Smart Lock" hidden="false">
+              <description>While charged, this model ignores cover when making a ranged attack.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="a290-718e-ed37-14f0" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8893-09cc-8bdb-06cd" name="Battle Rifle" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="e236-b3d2-1b7c-3fd0" name="CHARGE: Mechanikal Optics" hidden="false">
+              <description>While this model is charged, this weapon gains +4 RNG.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="12a7-0d27-93c6-c403" name="Ripper" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="3f01-fe33-c06c-8961" name="Ripper" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="019c-4889-281f-1510" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="d357-9074-1117-22c5" name="Flamethrower" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Fire</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="bd58-493f-9a40-b172" name="Fire" hidden="false">
+              <description>This weapon causes fire damage. A model hit by this weapon suffers the fire continuous effect.</description>
+            </rule>
+            <rule id="aea1-85fb-5fd1-bc96" name="Spray" hidden="false">
+              <description>This is a Spray Weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6e63-fa13-8e8b-545d" name="Talon Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="e65e-ad5b-e7e4-7ca6" name="Talon Rocket Pod" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Soulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic/Explosion</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="9e9c-7154-83b8-8565" name="Blast" hidden="false">
+              <description>This is a Blast Weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f87e-11d2-813e-ca25" name="Rail Gun" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="569a-78d3-16e7-6698" name="Rail Gun" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">18</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Soulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="0182-4070-9a99-d2b8" name="SPIKE: Arc Booster" hidden="false">
+              <description>When attacking with this weapon, before making a damage roll, this model can spike to cause the target of the attack to suffer –1 ARM until the attack is resolved.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="388e-1c8c-33c7-ee81" name="Warjack Heavy" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="388e-1c8c-33c7-ee81" name="Strike Raptor" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e47-4fbb-3c6e-57da" type="max"/>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8e47-4fbb-3c6e-57da" type="max"/>
       </constraints>
       <profiles>
-        <profile id="e237-3527-a8ba-2ee4" name="Warjack Heavy" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
+        <profile id="e237-3527-a8ba-2ee4" name="Strike Raptor" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
           <characteristics>
-            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789"/>
-            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6"/>
-            <characteristic name="MAT" typeId="82d5-1273-1574-20d5"/>
-            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0"/>
-            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064"/>
-            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9"/>
-            <characteristic name="Damage" typeId="81df-f62a-bbad-248e"/>
-            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e"/>
+            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789">5</characteristic>
+            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6">5</characteristic>
+            <characteristic name="MAT" typeId="82d5-1273-1574-20d5">4</characteristic>
+            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0">4</characteristic>
+            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064">2</characteristic>
+            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9">5</characteristic>
+            <characteristic name="Damage" typeId="81df-f62a-bbad-248e">4</characteristic>
+            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e">8</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="14ab-031d-7a83-b933" name="SPIKE: Jump Jets" hidden="false">
+          <description>Once per activation, this model can spike to gain +3 SPD and Flight until the end of its activation.</description>
+        </rule>
+        <rule id="7d65-af21-400c-7432" name="CHARGE: Thrusters" hidden="false">
+          <description>While charged, this model ignores movement penalties for rough terrain. Additionally, for each Arc this model is charged with, it gains +1 DEF.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="05bc-d1d3-5b3f-49d2" name="New CategoryLink" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="f968-2fe2-5491-4101" name="CORTEX: Ace Cortex" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="7531-1e3f-18e5-f47b" name="Advanced Optics" hidden="false">
+              <description>This model&apos;s ranged weapons gain +2 RNG.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="6478-7ccb-6911-59d8" name="CORTEX: Bomber Cortex" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3b13-29fb-738d-948c" name="Bomber" hidden="false">
+              <description>This model gains +1 action die on attack rolls with explosion weapons. Additionally, when this model makes an attack with an explosion weapon while it has Flight, immediately after the attack is resolved, this model can move up to 2˝.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="878b-ea22-9754-9b20" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a878-351f-5747-1493" name="Battle Rifle" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3d45-6668-1e36-29dc" name="CHARGE: Mechanikal Optics" hidden="false">
+              <description>While this model is charged, this weapon gains +4 RNG.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="08bf-cffa-836a-fe1d" name="Fusion Drill" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5bac-49f7-51f0-b335" name="Fusion Drill" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="281f-23f9-3f64-b296" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="376f-49da-e002-856b" name="Flamethrower" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Fire</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4cf8-1f34-7f3f-cfa7" name="Fire" hidden="false">
+              <description>This weapon causes fire damage. A model hit by this weapon suffers the fire continuous effect.</description>
+            </rule>
+            <rule id="3335-222e-7ca6-0991" name="Spray" hidden="false">
+              <description>This is a spray weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="37e2-1ae0-2e5c-b792" name="Talon Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="aa71-378d-039d-11a7" name="Talon Rocket Pod" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic/Explosion</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="bf0d-6ac7-4431-10a7" name="Blast" hidden="false">
+              <description>This is a Blast Weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d9be-1f31-213e-7c61" name="Rail Gun" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="b823-059c-2f96-0da8" name="Rail Gun" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">18</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="f8ff-45f3-9492-9bdb" name="SPIKE: Arc Booster" hidden="false">
+              <description>When attacking with this weapon, before making a damage roll, this model can spike to cause the target of the attack to suffer –1 ARM until the attack is resolved.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="734c-dbe3-0373-004b" name="Particle Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="5adc-2280-d480-b496" name="Particle Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">6</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="f004-e0ab-1fe0-2e52" name="Explosive Collapse" hidden="false">
+              <description>If this weapon targets and destroys an enemy model, other models within 2˝ of the model targeted suffer a POW 4 damage roll.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="4.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="52fd-019c-13b7-73d5" name="Hunter thing" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="52fd-019c-13b7-73d5" name="Hunter" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b91-8715-5a59-9d87" type="max"/>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6b91-8715-5a59-9d87" type="max"/>
       </constraints>
       <profiles>
-        <profile id="ab78-a319-e84d-1216" name="Hunter thing" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+        <profile id="ab78-a319-e84d-1216" name="Hunter" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
           <characteristics>
-            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15"/>
-            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424"/>
-            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e"/>
-            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775"/>
-            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63"/>
-            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474"/>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">7</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">6</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">4</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">2</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3ac6-82c2-1908-3477" name="Sniper Rifle" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">15</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7c17-f5ac-0e14-fe2a" name="Combat Blade" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="ad1c-1e41-e679-7d9a" name="Fire &amp; Displace" hidden="false">
+          <description>Immediately after resolving a ranged attack made by this model, this model can move up to 3˝.</description>
+        </rule>
+        <rule id="b1d6-ac03-b76c-083f" name="CHARGE: Mimetic Cloak" hidden="false">
+          <description>While this model is charged, it gains Stealth. A model with Stealth cannot be targeted by attacks made by models more than 8˝ away.</description>
+        </rule>
+        <rule id="baf1-2d6a-b93b-eedd" name="Sniper Rifle: SPIKE: Arc Booster" hidden="false">
+          <description>When attacking with this weapon, before making a damage roll, this model can spike to cause the target of the attack to suffer –1 ARM until the attack is resolved.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="ffa6-2ad0-0a77-35af" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4a1b-c295-94c3-5593" name="Combat Engineer" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8732-862d-e82a-fa98" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="87e5-1283-e5f4-28e0" name="Combat Engineer" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">5</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">2</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">4</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="46a9-31c4-d9c3-3fac" name="Fusion Torch" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Beam</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5d05-f6f4-fe1c-e374" name="Wrench" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="45e7-8fbb-24aa-b551" name="Fusion Torch: CHARGE: High Intensity" hidden="false">
+          <description>When this model makes an attack with this weapon while charged, add two power dice to the attack roll for each Arc on it instead of one.</description>
+        </rule>
+        <rule id="3b32-d1ab-d563-2cdd" name="SPIKE: Jump Start" hidden="false">
+          <description>During its activation, this model can spike to remove an activation token from a friendly warjack within 10” of it.</description>
+        </rule>
+        <rule id="33d9-a8f1-326a-d14c" name="Repair (★Action)" hidden="false">
+          <description>This model can make a special action to repair a friendly model within 1˝ of it. Roll three action dice. For each strike rolled, remove 1 damage point from the model being repaired</description>
+        </rule>
+        <rule id="385c-7394-e9dd-517c" name="CHARGE: Spotlight" hidden="false">
+          <description>While this model is charged, enemy models within 10&quot; of it lose Stealth.</description>
+        </rule>
+        <rule id="6341-9f37-8611-739e" name="Tune Up (★Action)" hidden="false">
+          <description>This model can take a special action to tune up a friendly warjack within 1˝ of it. Continuous effects on the warjack immediately expire, then the warjack gains the tune up
+continuous effect.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="592c-4d9f-86d4-db81" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9dab-2828-a770-edd5" name="Artemis Fang" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3948-fd01-f3df-2bf9" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="9388-036f-9c73-620a" name="Artemis Fang" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">7</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">6</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">4</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ac44-6f03-f103-04a6" name="2x Arclock Pistol" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5e60-56e6-2c64-9ef9" name="SPIKE: Maelstrom Activator" hidden="false">
+          <description>During this unit’s activation, immediately after completing its attacks this model can spike to make one additional attack with each of its weapons.</description>
+        </rule>
+        <rule id="1b66-1066-3b9f-239e" name="CHARGE: Smart Lock" hidden="false">
+          <description>While charged, this model ignores cover when making a ranged attack.</description>
+        </rule>
+        <rule id="c462-a9ef-938a-1930" name="Weapon Expert" hidden="false">
+          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
+        </rule>
+        <rule id="da08-2349-24ff-bd9a" name="Arclock Pistol: Attack Mode" hidden="false">
+          <description>Attack Mode - Each time this weapon is used to make an attack, choose one of the following special rules:
+
+• Blast Weapon - This is a Blast Weapon.
+• Fire - This weapon causes fire damage. A model hit by this weapon suffers the
+fire continuous effect.
+• Revelator - When making ranged attacks, this model ignores Stealth.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="aac8-d033-d555-3ced" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
