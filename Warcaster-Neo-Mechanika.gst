@@ -58,14 +58,30 @@
     <categoryEntry id="b02f-fb90-cc10-756e" name="Solo" hidden="false"/>
     <categoryEntry id="58fb-2f56-1203-a39b" name="Squad" hidden="false"/>
     <categoryEntry id="2b2b-fb7d-e27a-72aa" name="Warjack" hidden="false"/>
+    <categoryEntry id="792c-d621-1a93-ab74" name="Hero" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f887-5ef8-2725-e3c2" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="7055-4290-0eea-9398" name="Standard" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe17-b3eb-b746-a452" type="min"/>
+        <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e94-71e2-327a-ddd4" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="efd1-a1e7-1bb3-88c5" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
         <categoryLink id="52dd-6395-60c0-cffd" name="Warjack" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="false"/>
         <categoryLink id="27a1-0fd0-0c90-7de1" name="Squad" hidden="false" targetId="58fb-2f56-1203-a39b" primary="false"/>
+        <categoryLink id="57c0-a7f6-defd-2ee9" name="Hero" hidden="false" targetId="792c-d621-1a93-ab74" primary="false"/>
       </categoryLinks>
+    </forceEntry>
+    <forceEntry id="671c-e8d4-d0ac-c7cf" name="Skirmish" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b20-ed30-91c1-0c5b" type="min"/>
+        <constraint field="selections" scope="roster" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d42-bf38-5de6-9645" type="max"/>
+      </constraints>
     </forceEntry>
   </forceEntries>
 </gameSystem>
