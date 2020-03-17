@@ -743,6 +743,79 @@
         <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c68b-ccdd-33bb-fb6f" name="Voitek Sudal, Bounty Hunter (WC)" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3a4b-c1b0-36a2-846d" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1691-8d40-e086-0333" name="Voitek Sudal" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">4</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">5</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7d9e-a95e-2a20-a7a5" name="Force Constrictor" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Force</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a7e8-e878-45dd-1910" name="Null Detonator" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">6</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">-</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6184-ec40-74e5-ebf2" name="Combat Blade" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0835-6bc2-ecf4-80cb" name="Force Constrictor: SPiKE: Stun Module" hidden="false">
+          <description>Immediately after hitting a target with this weapon, this model can spike once to give the unit hit an activation token.</description>
+        </rule>
+        <rule id="639a-3d8a-7e36-7156" name="Null Detonator: Nullifier" hidden="false">
+          <description>This weapon causes no damage. Instead clear 1 Arc from the unit or void gate hit by this weapon.</description>
+        </rule>
+        <rule id="a8ab-cdde-afb5-61dd" name="CHARGE: Gate Jammer" hidden="false">
+          <description>While this model is charged, increase the Deployment Cost of enemy units deployed from Void Gates within 10˝ of this model by 1.</description>
+        </rule>
+        <rule id="b6ed-725a-38bb-ebf7" name="Pathfinder" hidden="false">
+          <description>This model ignores movement penaties for rough terrain.</description>
+        </rule>
+        <rule id="9b3b-e903-6da5-ca1d" name="Stealth" hidden="false">
+          <description>This model has Stealth. A model with Stealth cannot be target by attacks made by models more than 8&quot; away.</description>
+        </rule>
+        <rule id="5c92-39b8-7139-3784" name="Weapons Expert" hidden="false">
+          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
+        </rule>
+        <rule id="02fb-4793-68e8-f0ca" name="Wild Card [Alliance and Marcher Worlds]" hidden="false">
+          <description>This unit can be includes in Alliance and Marcher Worlds forces.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="4905-a125-d832-31f7" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedRules>
     <rule id="989e-d5d8-d7cf-e4e0" name="Compound Armor" hidden="false">
