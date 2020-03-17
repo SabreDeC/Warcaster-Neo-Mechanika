@@ -67,8 +67,8 @@
   <forceEntries>
     <forceEntry id="7055-4290-0eea-9398" name="Standard" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe17-b3eb-b746-a452" type="min"/>
         <constraint field="selections" scope="roster" value="15.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e94-71e2-327a-ddd4" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c37-4a45-51df-02af" type="min"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="efd1-a1e7-1bb3-88c5" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
@@ -79,9 +79,15 @@
     </forceEntry>
     <forceEntry id="671c-e8d4-d0ac-c7cf" name="Skirmish" hidden="false">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8b20-ed30-91c1-0c5b" type="min"/>
         <constraint field="selections" scope="roster" value="8.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d42-bf38-5de6-9645" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b57a-c949-5309-481e" type="min"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="792c-d621-1a93-ab74" name="Hero" hidden="false" targetId="792c-d621-1a93-ab74" primary="false"/>
+        <categoryLink id="e37d-00fe-c860-3ca4" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+        <categoryLink id="43cb-ad2f-ef0e-e6f6" name="Warjack" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="false"/>
+        <categoryLink id="3988-8490-c011-58ee" name="Squad" hidden="false" targetId="58fb-2f56-1203-a39b" primary="false"/>
+      </categoryLinks>
     </forceEntry>
   </forceEntries>
 </gameSystem>
