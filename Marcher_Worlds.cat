@@ -209,6 +209,10 @@
               <description>This model gains a cumulative +1 DEF bonus for each other friendly unit within 5˝, up to a bonus of +3.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="76ed-343e-57e9-4dff" name="CORTEX: Scout Cortex" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -219,6 +223,10 @@
               <description>While charged, this model ignores cover when making a ranged attack.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a290-718e-ed37-14f0" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -239,6 +247,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="12a7-0d27-93c6-c403" name="Ripper" hidden="false" collective="false" import="true" type="upgrade">
@@ -255,6 +264,7 @@
           </profiles>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="019c-4889-281f-1510" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
@@ -279,6 +289,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6e63-fa13-8e8b-545d" name="Talon Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -300,6 +311,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f87e-11d2-813e-ca25" name="Rail Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -321,6 +333,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -365,6 +378,10 @@
               <description>This model&apos;s ranged weapons gain +2 RNG.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6478-7ccb-6911-59d8" name="CORTEX: Bomber Cortex" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -372,6 +389,10 @@
               <description>This model gains +1 action die on attack rolls with explosion weapons. Additionally, when this model makes an attack with an explosion weapon while it has Flight, immediately after the attack is resolved, this model can move up to 2˝.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="878b-ea22-9754-9b20" name="Battle Rifle" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -392,6 +413,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="08bf-cffa-836a-fe1d" name="Fusion Drill" hidden="false" collective="false" import="true" type="upgrade">
@@ -408,6 +430,7 @@
           </profiles>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="281f-23f9-3f64-b296" name="Flamethrower" hidden="false" collective="false" import="true" type="upgrade">
@@ -432,6 +455,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="37e2-1ae0-2e5c-b792" name="Talon Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -453,6 +477,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d9be-1f31-213e-7c61" name="Rail Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -474,6 +499,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="734c-dbe3-0373-004b" name="Particle Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -495,6 +521,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -613,6 +640,7 @@ continuous effect.</description>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9dab-2828-a770-edd5" name="Artemis Fang" hidden="false" collective="false" import="true" type="model">
@@ -660,10 +688,12 @@ fire continuous effect.
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="aac8-d033-d555-3ced" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+        <categoryLink id="aac8-d033-d555-3ced" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+        <categoryLink id="e1e0-32ec-6eae-262b" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a356-322f-e58c-e0ec" name="Voitek Sudal, Bounty Hunter (WC)" hidden="false" collective="false" import="true" type="model">
@@ -733,8 +763,13 @@ fire continuous effect.
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="1e0a-c308-6dfb-2f11" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+        <categoryLink id="1e0a-c308-6dfb-2f11" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+        <categoryLink id="ecbc-a489-5772-780d" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
 </catalogue>
