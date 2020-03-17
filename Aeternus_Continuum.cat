@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="144d-9a31-b801-c47a" name="Aeternus Continuum" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="978c-7a2d-4fd4-1b3a" name="Vassal Reavers" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ef4d-94e2-1dec-99bf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e70a-5e91-3cbe-7041" name="Vassal Reavers" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">2</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="301c-f785-59cb-f941" name="Nailer" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7abe-4214-ec32-84cd" name="Fusion Saw" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8bab-2bb0-21f8-fcb4" name="CHARGE: Mimetic Cloak" hidden="false">
+          <description>While this model is charged, it gains Stealth. A model with Stealth cannot be targeted by attacks made by models more than 8˝ away.
+</description>
+        </rule>
+        <rule id="2ddc-eec7-f40c-b930" name="SPIKE: Phase Sequencer" hidden="false">
+          <description>Once per activation, this unit can spike to use Phase Sequencer. That activation, models in this squad can move through obstructions and through other models if they enough movement to move completely past them.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="71bf-4cb3-bfb0-4668" name="New CategoryLink" hidden="false" targetId="58fb-2f56-1203-a39b" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="08ea-7c84-cd7d-2aa2" name="Vassal Witch Hunters" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b911-c17e-4191-ae70" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8527-e42d-b0f3-ad13" name="Vassal Witch Hunters" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">4</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">2</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1c83-abca-6d72-784a" name="Hex Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="89f9-4d21-dfb0-1222" name="CHARGE: Mimetic Cloak" hidden="false">
+          <description>While this model is charged, it gains Stealth. A model with Stealth cannot be targeted by models more than 8&quot; away.</description>
+        </rule>
+        <rule id="d9d5-ffd5-08c1-3dff" name="SPIKE: Phase Sequencer" hidden="false">
+          <description>Once per activation, this unit can spike to use Phase Sequencer. That activation, models in this squad can move through structures and through other models if they enough movement to move completely past them.
+</description>
+        </rule>
+        <rule id="e20d-6fdc-5bf0-3be7" name="Hex Cannon: Malefactor" hidden="false">
+          <description>When this model hits a target with an attack with this weapon, enemy Cypher cards on the model hit expire.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0168-1737-2c26-19cb" name="New CategoryLink" hidden="false" targetId="58fb-2f56-1203-a39b" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b86c-f98c-b74b-d302" name="Immortal Weaver" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="08ee-84ee-ef52-0352" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f52b-4ceb-7bc0-a36d" name="Immortal Weaver" hidden="false" typeId="7098-0d54-5d7a-9d51" typeName="Weaver">
+          <characteristics>
+            <characteristic name="SPD" typeId="a3d5-84b7-8d74-55d2">6</characteristic>
+            <characteristic name="MAT" typeId="8e04-a8c1-a6b7-84ff">3</characteristic>
+            <characteristic name="RAT" typeId="d72a-87d4-0125-11f6">3</characteristic>
+            <characteristic name="DEF" typeId="cd31-356b-e649-58aa">3</characteristic>
+            <characteristic name="ARM" typeId="b2d4-c1e8-cd5b-0d13">3</characteristic>
+            <characteristic name="FOC" typeId="c55d-7684-95d9-03df">4</characteristic>
+            <characteristic name="Damage" typeId="411b-1469-aadc-5284">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="06d8-7673-a0e4-9a73" name="Psychokinetic Hood" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Force</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="f8e7-1779-6a9c-cc1b" name="CHARGE: Arcantrik Amplifier" hidden="false">
+          <description>While this model is charged, Fury Cyphers channeled through it gain +5 RNG.</description>
+        </rule>
+        <rule id="4348-7cc0-8e78-febc" name="Arc Relay [13]" hidden="false">
+          <description>This model can channel Fury Cyphers. A Fury Cypher channeled through this model is RNG 13.</description>
+        </rule>
+        <rule id="9feb-4eae-b1f3-5334" name="SPIKE: Slip Displacer" hidden="false">
+          <description>Once per activation, this model can spike to move up to 3&quot;.</description>
+        </rule>
+        <rule id="506d-8afe-a2b2-6b6a" name="Psychokinetic Hood: Spray" hidden="false">
+          <description>This is a Spray Weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a928-10f6-fd9c-d795" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8c7-5f63-73fd-7457" name="Grafter" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fb59-be4d-0909-28ba" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="20f0-cfbb-4e53-8d84" name="Grafter" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">5</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="12f2-5c75-a80e-8dd5" name="Bone Saw" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4e04-d4ca-1397-9188" name="CHARGE: Adrenalizer" hidden="false">
+          <description>While this model is charged, other warrior models within 5˝ of it gain +1 ARM and do not suffer continuous effects.</description>
+        </rule>
+        <rule id="f92c-53ad-8879-3b5e" name="Repair (★Action)" hidden="false">
+          <description>This model can make a special action to repair a friendly model within 1˝ of it. Roll three action dice. For each strike rolled, remove 1 damage point from the model being repaired.</description>
+        </rule>
+        <rule id="95b7-b00a-1ff0-ccc7" name="SPIKE: Resurrection Protocol" hidden="false">
+          <description>During its activation and while within 10˝ of a target friendly squad, this model can spike to return up to two destroyed trooper models to the squad. Place these models within 2˝ of another model in the squad. A squad can never have more than three trooper models as a result of Resurrection Protocol.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2e92-07f8-aad4-11d1" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ed1-0167-1186-701e" name="Marauder" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="01f9-34e5-14db-6fcf" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="614d-7ead-cda3-4287" name="Marauder" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">5</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">4</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">4</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">2</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">4</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f437-7d45-57c0-796d" name="Mangler" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fb23-c0a4-e7f8-e0c4" name="Shredder" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="bf89-177e-e3cb-d9e4" name="CHARGE: Impulse Reactor" hidden="false">
+          <description>While charged, if this unit has an activation token on it at the start of your turn, you can remove the activation token from this model.</description>
+        </rule>
+        <rule id="47d4-8d2b-03f4-a489" name="Weapons Expert" hidden="false">
+          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
+        </rule>
+        <rule id="03cf-d158-0713-8e81" name="Shredder: Strafe" hidden="false">
+          <description>After declaring an attack with this weapon and its target, roll one power die. For each strike rolled, you can make one additional attack against another model within 2˝ of the initial target. Each attack must target a different model. Additional attacks cannot generate additional Strafe attacks.</description>
+        </rule>
+        <rule id="da94-9fea-d859-636d" name="Mangler: SPIKE: Power Attack" hidden="false">
+          <description>Immediately after hitting a warjack with this weapon, this model can spike to cause the warjack to suffer the system failure continuous effect.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="f167-c328-5f8e-0a75" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0164-05b7-f125-fb98" name="Nemesis" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="15f5-33e0-778a-3206" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="447b-9f4e-d63c-aceb" name="Nemesis" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
+          <characteristics>
+            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789"/>
+            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6"/>
+            <characteristic name="MAT" typeId="82d5-1273-1574-20d5"/>
+            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0"/>
+            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064"/>
+            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9"/>
+            <characteristic name="Damage" typeId="81df-f62a-bbad-248e"/>
+            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="0bc5-efa1-d8d0-80d0" name="New CategoryLink" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="36e1-77b9-25df-c2db" name="Scourge" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2a7b-fefb-76db-0441" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f5f6-ab1c-0099-a50f" name="Scourge" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
+          <characteristics>
+            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789"/>
+            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6"/>
+            <characteristic name="MAT" typeId="82d5-1273-1574-20d5"/>
+            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0"/>
+            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064"/>
+            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9"/>
+            <characteristic name="Damage" typeId="81df-f62a-bbad-248e"/>
+            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="4d3d-1c73-45d0-ef7f" name="New CategoryLink" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e9e9-3b50-3dbf-e9fd" name="Hierotheos Raxis" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="e890-f1b5-e969-cec8" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="17ac-8ffb-eaf5-a729" name="Hierotheos Raxis" hidden="false" typeId="7098-0d54-5d7a-9d51" typeName="Weaver">
+          <characteristics>
+            <characteristic name="SPD" typeId="a3d5-84b7-8d74-55d2">5</characteristic>
+            <characteristic name="MAT" typeId="8e04-a8c1-a6b7-84ff">3</characteristic>
+            <characteristic name="RAT" typeId="d72a-87d4-0125-11f6">4</characteristic>
+            <characteristic name="DEF" typeId="cd31-356b-e649-58aa">2</characteristic>
+            <characteristic name="ARM" typeId="b2d4-c1e8-cd5b-0d13">4</characteristic>
+            <characteristic name="FOC" typeId="c55d-7684-95d9-03df">4</characteristic>
+            <characteristic name="Damage" typeId="411b-1469-aadc-5284">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="15a6-8c6b-3e6e-f670" name="Soul Grinder" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="5ca5-9cf6-20a8-9e54" name="Arc Relay [13]" hidden="false">
+          <description>This model can channel Fury Cyphers. A Fury Cypher channeled through this model is RNG 13.</description>
+        </rule>
+        <rule id="8c74-1b0c-341c-d030" name="CHARGE: Kinetic Field" hidden="false">
+          <description>While this model is charged, this model and friendly models within 5” of it gain cover.</description>
+        </rule>
+        <rule id="17fb-eb5c-9739-bdcd" name="Pathfinder" hidden="false">
+          <description>This model ignores movement penalties for rough terrain.</description>
+        </rule>
+        <rule id="e194-ebee-1ab6-f49c" name="Psycho Relay" hidden="false">
+          <description>While this unit is in play, you can have up to six Cypher cards in your hand at any time.</description>
+        </rule>
+        <rule id="731d-f465-4a75-db50" name="SPIKE: Thanotech Reclaimer" hidden="false">
+          <description>This model can spike to use Thanotech at any time during its activation. When it does so you can return any Cypher card in your discard pile to your hand.</description>
+        </rule>
+        <rule id="b67a-5695-5675-1297" name="Soul Grinder: Spray" hidden="false">
+          <description>This is a Spray Weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="d2a4-9199-615c-c7e2" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
+        <categoryLink id="b36d-e213-444b-ba74" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
