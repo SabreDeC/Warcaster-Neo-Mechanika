@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="9ed6-bccb-713a-0779" name="Iron Star Alliance" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="ee67-fb9c-33c7-74ef" name="Paladin Enforcers" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fa0c-cae4-b97e-5974" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="fd13-596b-af20-98fb" name="Paladin Enforcers" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0e58-83cd-0270-92c9" name="Assault Rifle" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7613-b8d4-ccb6-73bc" name="Bayonet" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a671-01fa-8553-bf15" name="Compound Armor" hidden="false">
+          <description>This model gains +1 ARM against explosion damage.</description>
+        </rule>
+        <rule id="c16d-d827-e63d-34f4" name="SPIKE: Divination Lock" hidden="false">
+          <description>During its activation, this squad can spike to ignore cover and Stealth for the rest of its activation.</description>
+        </rule>
+        <rule id="482a-d0d0-2a6b-59cf" name="CHARGE: Reflex Accelerator" hidden="false">
+          <description>When this model makes its attacks during its activation while it is charged, it can attack with both its Assault rifle and Bayonet.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="84b1-c3a4-de5a-3b9e" name="New CategoryLink" hidden="false" targetId="58fb-2f56-1203-a39b" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c9bd-e446-7477-d4d5" name="Paladin Aegis" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5c62-7881-6824-6972" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f81a-767b-8c21-a175" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4c33-6036-4f5c-0681" name="Paladin Aegis" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+              <characteristics>
+                <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">*</characteristic>
+                <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+                <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+                <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+                <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+                <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="197a-62df-7025-3aad" name="Force Generator" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Force</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2c28-5347-de92-d5fb" name="Attachment (Paladin Squad)" hidden="false">
+              <description>This model can be deployed attached to a Paladin squad.</description>
+            </rule>
+            <rule id="7ca3-9c66-fecb-0b4a" name="Compound Armor" hidden="false">
+              <description>This model gains +1 ARM against explosion damage.</description>
+            </rule>
+            <rule id="d833-c8f7-f3af-b8c8" name="CHARGE: Force Field" hidden="false">
+              <description>While charged, models in this squad gain cover.</description>
+            </rule>
+            <rule id="cfa7-7f5a-5b83-041e" name="Force Generator: SPIKE : Force Ram" hidden="false">
+              <description>When this model hits a target with an attack with this weapon, it can spike to cause the target to be slammed rather than suffering the effects of Lock Down. Before damage is rolled, the model hit is slammed 3&quot; directly away from this model. Collateral damage is equal to the POW of this weapon.</description>
+            </rule>
+            <rule id="d61c-90ff-6171-b965" name="Force Generator: Lock Down" hidden="false">
+              <description>A model hit by the weapon suffers the Lock Down continuous effect.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="2af4-a798-83be-789c" name="Squad" hidden="false" targetId="58fb-2f56-1203-a39b" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="adb7-6047-f575-324e" name="Firebrand" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="808c-8b6b-7fcf-2870" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f69f-6be2-9f4a-c790" name="Firebrand" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
+          <characteristics>
+            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789">6</characteristic>
+            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6">4</characteristic>
+            <characteristic name="MAT" typeId="82d5-1273-1574-20d5">4</characteristic>
+            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0">4</characteristic>
+            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064">3</characteristic>
+            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9">3</characteristic>
+            <characteristic name="Damage" typeId="81df-f62a-bbad-248e">3</characteristic>
+            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e">5 </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="2fb3-9a8a-be91-55fa" name="New CategoryLink" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="53d6-6737-f91f-ba20" name="CORTEX: &apos;Jack Hunter" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="9995-8720-884a-255a" name="SPIKE: &apos;Jack Hunter" hidden="false">
+              <description>Once per activation, this model can spike to use ’Jack Hunter. That activation, this model gains +3 action dice on its attack rolls targeting enemy warjacks.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9c1c-79d8-c678-93c3" name="CORTEX: Reflex Cortex" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="f373-ffb6-f753-98a6" name="Heightened Reflexes" hidden="false">
+              <description>When this model is targeted by an attack, after the attack is resolved, it can move up to 3˝ inches.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b36f-2b6f-013b-a08a" name="Repulsor Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="a265-1ac3-0c0b-beff" name="Repulsor Shield" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">2</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Force</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="b0a8-ae5a-1bad-8bf7" name="SPIKE: Repulsor Ram" hidden="false">
+              <description>When this model is hit by a melee attack, after the attack is resolved, this model can spike to use Repulsor Ram. The attacking model is immediately slammed 3˝ directly away from this model. Collateral damage is equal to the POW of the attacking model’s melee weapon.</description>
+            </rule>
+            <rule id="5633-4176-2c97-39d1" name="Shield" hidden="false">
+              <description>This model gains +1 ARM. This bonus is cumulative with additional shield weapons.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fa0f-c7e7-af0c-c44a" name="Fusion Glaive" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="21f1-13fb-4f80-0265" name="Fusion Glaive" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4689-6b0e-42a4-74ca" name="SPIKE: Power Attack" hidden="false">
+              <description>Immediately after hitting a warjack with this weapon, this model can spike to cause the warjack to suffer the system failure continuous effect.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="cd93-4d74-1073-1e80" name="Assault Rifle/Bayonet" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="443a-b711-75bb-5d88" name="Assault Rifle" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="337a-936a-1cdd-6812" name="Bayonet" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8c50-2c9a-2c6f-4cc2" name="Harbinger Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="13a7-5471-c9e9-9053" name="Harbinger Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ad9a-547b-ff4d-6bcb" name="SPIKE: Hunter-Killer Rounds" hidden="false">
+              <description>When making an attack with this weapon, this model can spike to ignore line of sight and cover when declaring the target and resolving the attack.</description>
+            </rule>
+            <rule id="c6ad-8ea6-0928-4889" name="Strafe" hidden="false">
+              <description>After declaring an attack with this weapon and its target, roll one power die. For each strike rolled, you can make one additional attack against another model within 2˝ of the initial target. Each attack must target a different model. Additional attacks cannot generate additional Strafe attacks.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bd16-550c-c092-62e2" name="Null Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="be95-3937-4f14-c007" name="Null Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">14</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="cb07-74f3-66f0-6a62" name="Null Strike" hidden="false">
+              <description>Clear 1 Arc from the unit or void gate hit by the weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4c7b-2a3e-f651-872f" name="Paladin Commander" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5818-8774-ba25-13e7" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bfd0-a494-11d1-0fa5" name="Paladin Commander" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">4</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">4</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cb47-cd3a-6e7b-08ba" name="Pulse Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">10</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Explosion/Force</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="dc3d-76f5-c832-e67e" name="Fusion Sword" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7c66-17b7-6a7a-355f" name="SPIKE: Command Interface (Paladin)" hidden="false">
+          <description>During it&apos;s activation this model can spike to remove an activation token from a friendly Paladin squad within 10&quot; of it.</description>
+        </rule>
+        <rule id="02c6-26d2-7c5d-46c2" name="Compound Armor" hidden="false">
+          <description>This model gains +1 ARM against explosion damage.</description>
+        </rule>
+        <rule id="3512-a870-c42d-68c9" name="CHARGE: Reflex Accelerator" hidden="false">
+          <description>When this model makes its attacks during its activation while it is charged, it can attack with both its Pulse Cannon and Fusion Sword.</description>
+        </rule>
+        <rule id="de9a-6f7a-876c-50c2" name="Pulse Cannon: Blast" hidden="false">
+          <description>This is a Blast Weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2a71-1d95-09d8-2b37" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd54-b139-fafa-0c4b" name="Paladin Weaver" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="33f3-d087-10ba-6ecd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="5e72-a743-67f4-da12" name="Paladin Weaver" hidden="false" typeId="7098-0d54-5d7a-9d51" typeName="Weaver">
+          <characteristics>
+            <characteristic name="SPD" typeId="a3d5-84b7-8d74-55d2">6</characteristic>
+            <characteristic name="MAT" typeId="8e04-a8c1-a6b7-84ff">3</characteristic>
+            <characteristic name="RAT" typeId="d72a-87d4-0125-11f6">3</characteristic>
+            <characteristic name="DEF" typeId="cd31-356b-e649-58aa">3</characteristic>
+            <characteristic name="ARM" typeId="b2d4-c1e8-cd5b-0d13">3</characteristic>
+            <characteristic name="FOC" typeId="c55d-7684-95d9-03df">4</characteristic>
+            <characteristic name="Damage" typeId="411b-1469-aadc-5284">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e473-a4b7-0fed-1170" name="Handgun" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7084-f0f1-b41e-ef94" name="Null Hammer" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="6c9d-bb2f-e933-b0c9" name="CHARGE: Arcantrik Amplifier" hidden="false">
+          <description>While tihs model is charged Fury Cyphers channeled through it gain +5 RNG.</description>
+        </rule>
+        <rule id="c3f1-b5cf-f7e5-f520" name="Arc Relay (12)" hidden="false">
+          <description>This model can channel Fury Cyphers. A Fury Cypher channeled through this model is RNG 12.</description>
+        </rule>
+        <rule id="19ea-3d2d-02e4-3804" name="Compound Armor" hidden="false">
+          <description>This model gains +1 ARM against explosion damage.</description>
+        </rule>
+        <rule id="d30c-0963-6688-2442" name="SPIKE: Realignment Codex" hidden="false">
+          <description>Once per activation, this unit can spike to use Realignment Codex. When it does so, you can clear any amount of Arc from one friendly unit within 10˝ of this model or charge one unit with any amount of Arc up to its limit.</description>
+        </rule>
+        <rule id="a6ec-1571-c408-38fc" name="Null Hammer: Null Strike" hidden="false">
+          <description>Clear 1 Arc from the unit or void gate hit by this weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="1920-53fa-4e65-b603" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a6a-a88f-4970-acdf" name="Paladin Annihilators" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b396-afee-57c8-284b" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="00f0-692a-87d5-4edc" name="Paladin Annihilators" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">4</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="5491-aaf4-9972-2a44" name="Harbinger Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="8d13-e328-97d9-93bf" name="Compound Armor" hidden="false">
+          <description>This model gains +1 ARM against explosion damage.</description>
+        </rule>
+        <rule id="3f75-0ad2-9589-8fd6" name="CHARGE: Smart Lock" hidden="false">
+          <description>While charged, this model ignores cover when making a ranged attack.</description>
+        </rule>
+        <rule id="33d8-7ff1-4944-6923" name="Harbinger Cannon: Hunter-Killer Rounds" hidden="false">
+          <description>When making an attack with this weapon, this model can spike to ignore line of sight and cover when declaring the target and resolving the attack.</description>
+        </rule>
+        <rule id="41e4-92aa-d02c-fdb8" name="Harbinger Cannon: Strafe" hidden="false">
+          <description>After declaring an attack with this weapon and its target, roll one power die. For each strike rolled, you can make one additional attack against another model within 2˝ of the initial target. Each attack must target a different model. Additional attacks cannot generate additional Strafe attacks.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="546d-0bea-de0c-fe11" name="New CategoryLink" hidden="false" targetId="58fb-2f56-1203-a39b" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c017-6632-5272-6756" name="Paladin Aegis" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b12a-375c-e48f-79d6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="2a45-7c2a-c95a-c219" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="33a1-1e02-c344-d7c3" name="Paladin Aegis" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+              <characteristics>
+                <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">*</characteristic>
+                <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">3</characteristic>
+                <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+                <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+                <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+                <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">1</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="72a5-79d6-10de-e1e1" name="Force Generator" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Force</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="d977-14fd-3782-188a" name="Attachment (Paladin Squad)" hidden="false">
+              <description>This model can be deployed attached to a Paladin squad.</description>
+            </rule>
+            <rule id="ad2f-efe0-736e-1702" name="CHARGE: Force Field" hidden="false">
+              <description>While charged, models in this squad gain cover.</description>
+            </rule>
+            <rule id="dd8b-8c83-1a75-d324" name="Compound Armor" hidden="false">
+              <description>This model gains +1 ARM against explosion damage.</description>
+            </rule>
+            <rule id="bf46-6ab2-124b-7b5b" name="Force Generator: Lock Down" hidden="false">
+              <description>A model hit by the weapon suffers the Lock Down continuous effect.</description>
+            </rule>
+            <rule id="c81e-9918-2821-555d" name="Force Generator: SPIKE: Force Ram" hidden="false">
+              <description>When this model hits a target with an attack with this weapon, it can spike to cause the target to be slammed rather than suffering the effects of Lock Down. Before damage is rolled, the model hit is slammed 3&quot; directly away from this model. Collateral damage is equal to the POW of this weapon.</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink id="9d23-9307-12f1-5775" name="Squad" hidden="false" targetId="58fb-2f56-1203-a39b" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47d7-b2f9-bea7-42bb" name="Justicar Voss" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3941-9f65-59ee-b39c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="672f-9fac-1fee-61f6" name="Justicar Voss" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">7</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">5</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">3</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">4</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="bf05-8967-a8f0-1adc" name="2x Arc Blades" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="431c-f2dd-da39-780d" name="Compound Armor" hidden="false">
+          <description>This model gains +1 ARM against explosion damage.</description>
+        </rule>
+        <rule id="473e-0ae4-6a3b-f4d9" name="Relentless" hidden="false">
+          <description>When this model destroys one or more enemy models with a melee attack, immediately after the attack is resolved, this model can move up to 2˝.</description>
+        </rule>
+        <rule id="6a21-30cb-5d1f-1236" name="CHARGE: Void Shifter" hidden="false">
+          <description>While this model is charged, it gains +1 ARM. When this model is hit by an enemy attack while charged, after the attack is resolved, you can reposition this model anywhere within 2˝ of its current location.</description>
+        </rule>
+        <rule id="2bd5-2f3d-c6ee-68ef" name="SPIKE: Void Jumper" hidden="false">
+          <description>When this model is hit by an enemy attack, before the damage roll is made, you can spike to have this model ignore the damage and effects of the attack. Reposition this model anywhere within 8˝ of its current location.</description>
+        </rule>
+        <rule id="8204-968c-de05-7d6a" name="Weapon Expert" hidden="false">
+          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
+        </rule>
+        <rule id="2f43-3e76-9d0f-d216" name="Arc Blade: Attack Mode" hidden="false">
+          <description>Each time this weapon is used to make an attack, choose one of the following special rules:
+
+• Armor-Piercing - When resolving a damage roll for an attack made with this weapon, reduce the target’s ARM by 1.
+
+• Malefactor - When this model hits a target with an attack with this weapon, enemy Cypher cards on the model hit expire.
+
+• Repulsor - When this model hits a model with an equal or smaller sized-base with an attack with this weapon, before damage is rolled, the model hit is slammed 3˝ directly away from this model. Collateral damage is equal to the POW of this weapon.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a6e5-dc25-e5ed-d75c" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca55-1ca2-2fac-eda9" name="Morningstar" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="4.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="976d-6d5b-eeff-9cbd" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="1aa5-c82d-fe22-8aee" name="Morningstar" hidden="false" typeId="d1a7-dc03-d44f-bee7" typeName="Warjack">
+          <characteristics>
+            <characteristic name="SPD" typeId="d9f7-53a6-1b1e-4789">6</characteristic>
+            <characteristic name="STR" typeId="ca85-47dc-17c0-45d6">5</characteristic>
+            <characteristic name="MAT" typeId="82d5-1273-1574-20d5">4</characteristic>
+            <characteristic name="RAT" typeId="aea4-4fdb-6bf6-d9c0">4</characteristic>
+            <characteristic name="DEF" typeId="4e15-9edb-3b33-1064">3</characteristic>
+            <characteristic name="ARM" typeId="5fd9-839d-5fe4-9ff9">5</characteristic>
+            <characteristic name="Damage" typeId="81df-f62a-bbad-248e">4</characteristic>
+            <characteristic name="Build Points" typeId="0de6-2d2a-bb48-796e">8</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="7c92-f3d6-e487-db94" name="SPIKE: Impulse Reciprocator" hidden="false">
+          <description>When this model is targeted and hit by an enemy attack, it can spike to use Impulse Reciprocator. If this model uses Impulse Reciprocator, immediately after the attack is resolved, this model can make one attack.</description>
+        </rule>
+        <rule id="7089-dcae-b797-807d" name="CHARGE: Range Amplifier" hidden="false">
+          <description>For each Arc this model is charged with, this model’s ranged weapons gain +1 RNG.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="a7c4-bb39-31ea-3fef" name="New CategoryLink" hidden="false" targetId="2b2b-fb7d-e27a-72aa" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="0bb5-e120-b031-0c32" name="CORTEX: Deadeye Cortex" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="3013-b58e-aa99-6bee" name="Revelator" hidden="false">
+              <description>When making ranged attacks, this model ignores stealth.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9ac1-f3f3-d361-69ad" name="CORTEX: Defender" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="26a6-42fa-145a-162a" name="SPIKE: Intercept Driver" hidden="false">
+              <description>When a friendly model is targeted and hit by an enemy attack while within 5” of this model, this model can spike to be hit instead of the model originally targeted.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="873e-50c7-53cb-50c0" name="Assault Shield" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="8cdb-d014-98ea-d5b5" name="Assault Shield" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="16a9-493b-0257-7f60" name="Heavy Fusion Glaive" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="9c69-32d1-897a-c8c6" name="Heavy Fusion Glaive" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">6</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="0808-42b3-1aa2-311c" name="SPIKE: Power Attack" hidden="false">
+              <description>Immediately after hitting a warjack with this weapon, this model can spike to cause the warjack to suffer the system failure continuous effect.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5201-2563-c92f-7313" name="Seeker" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="6631-2827-d980-fed1" name="Seeker" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">3</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Arm</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4e19-baca-1679-3cb5" name="CHARGE: Targeter" hidden="false">
+              <description>While charged, this model can reroll ranged attack rolls with this weapon. A roll can be rerolled once as a result of Targeter.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1cbd-adf8-f1cc-476a" name="Harbinger Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="2973-0bf7-f639-2326" name="Harbinger Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">12</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="39d0-3851-3c28-a60b" name="SPIKE: Hunter-Killer Rounds" hidden="false">
+              <description>When making an attack with this weapon, this model can spike to ignore line of sight and cover when declaring the target and resolving the attack.</description>
+            </rule>
+            <rule id="7259-2a8c-cfb4-3725" name="Strafe" hidden="false">
+              <description>After declaring an attack with this weapon and its target, roll one power die. For each strike rolled, you can make one additional attack against another model within 2˝ of the initial target. Each attack must target a different model. Additional attacks cannot generate additional Strafe attacks.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="58df-7e9e-54fe-ae82" name="Null Cannon" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="2e3b-4552-11f7-2daa" name="Null Cannon" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">14</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Energy</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2609-e5d0-cc6e-f47a" name="Null Stirke" hidden="false">
+              <description>Clear 1 Arc from the unit or void gate hit by this weapon.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fdd1-9233-65d9-7f7d" name="Starburst Missiles" hidden="false" collective="false" import="true" type="upgrade">
+          <profiles>
+            <profile id="90c7-417a-a4ec-a25c" name="Starburst Missiles" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+              <characteristics>
+                <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">14</characteristic>
+                <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+                <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4">Shoulder</characteristic>
+                <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic/Explosive</characteristic>
+                <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="dd33-6bee-5d20-9777" name="Blast" hidden="false">
+              <description>This is a Blast Weapon.</description>
+            </rule>
+            <rule id="93f3-ea0f-debc-ecd9" name="CHARGE: Targeter" hidden="false">
+              <description>While charged, this model can reroll ranged attack rolls with this weapon. A roll can be rerolled once as a result of Targeter.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="4.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedRules>
+    <rule id="989e-d5d8-d7cf-e4e0" name="Compound Armor" hidden="false">
+      <description>A model with Compound Armor gains +1 ARM against explosion damage.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="0849-6e2d-1826-42e6" name="Kinetic Accelerator" hidden="false" typeId="6726-58a9-044f-558d" typeName="Cypher">
+      <characteristics>
+        <characteristic name="TYPE" typeId="7d2f-37f7-538e-a7f5">Overdrive</characteristic>
+        <characteristic name="POW" typeId="60c8-f3d3-7327-d504">-</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
