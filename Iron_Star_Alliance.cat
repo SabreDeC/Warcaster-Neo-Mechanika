@@ -545,7 +545,8 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="a6e5-dc25-e5ed-d75c" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+        <categoryLink id="a6e5-dc25-e5ed-d75c" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+        <categoryLink id="fdd7-e9d7-1886-22ac" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
@@ -810,10 +811,12 @@
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="4905-a125-d832-31f7" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="true"/>
+        <categoryLink id="4905-a125-d832-31f7" name="New CategoryLink" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+        <categoryLink id="ce06-e919-b7c4-af0d" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
