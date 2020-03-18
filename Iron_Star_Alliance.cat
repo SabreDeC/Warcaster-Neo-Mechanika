@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9ed6-bccb-713a-0779" name="Iron Star Alliance" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9ed6-bccb-713a-0779" name="Iron Star Alliance" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="ee67-fb9c-33c7-74ef" name="Paladin Enforcers" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -817,6 +817,72 @@
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
         <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aabb-3f88-1bc4-4720" name="Baron Cassius Mooregrave (WC)" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="9f0f-28c2-f491-6ef0" name="Cassius Mooregrave" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">5</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">4</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">4</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d7e6-be94-a5cb-270d" name="Magnum" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9e80-9d10-de10-808b" name="Oblivion" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a01c-81f6-096c-1077" name="Living Terror" hidden="false">
+          <description>This model gains +2 DEF against melee attacks made by warrior models.</description>
+        </rule>
+        <rule id="c2d1-56b3-c349-7ca3" name="SPIKE: Phase Stalker" hidden="false">
+          <description>Once per activation, this model can spike to use Phase Stalker. When it does so, it can move up to 3˝ and make one additional attack.</description>
+        </rule>
+        <rule id="575d-ecf4-b24f-ea3b" name="Weapon Expert" hidden="false">
+          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
+        </rule>
+        <rule id="d2c6-a621-308f-94ed" name="Wild Card [Alliance and Continuum]" hidden="false">
+          <description>This unit can be includes in Alliance and Continuum forces.
+</description>
+        </rule>
+        <rule id="a0ff-ae96-5433-259a" name="Oblivion: CHARGE: High Intensity" hidden="false">
+          <description>When this model makes an attack with this weapon while charged, add two power dice to the attack roll for each Arc on it instead of one.
+</description>
+        </rule>
+        <rule id="907d-665b-072e-a759" name="Oblivion: Gorge" hidden="false">
+          <description>When this model destroys a warrior model with an attack this weapon, remove 1 damage
+from this model.</description>
+        </rule>
+        <rule id="fb0f-0132-37f6-239b" name="Oblivion: Siphon Power" hidden="false">
+          <description>When an attack with this weapon destroys an enemy model that was charged, you can immediately charge this model once the attack is resolved if this model was not already
+charged.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="971d-16f8-6e31-2ef7" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
+        <categoryLink id="8d27-b167-c359-adac" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
