@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9dbd-886d-b93f-25d2" name="Marcher Worlds" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9dbd-886d-b93f-25d2" name="Marcher Worlds" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="3e61-38bb-7baf-01b9" name="Ranger Fire Team" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -771,62 +771,8 @@ fire continuous effect.
         <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="47a6-c1fd-3c53-43a7" name="Captain Jax Redblade (WC)" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="6f38-d06b-e063-203c" name="Jax Redblade" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
-          <characteristics>
-            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
-            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">5</characteristic>
-            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">4</characteristic>
-            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">5</characteristic>
-            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">3</characteristic>
-            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">3</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="b7c8-745c-428c-6b64" name="Magnum" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
-          <characteristics>
-            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
-            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
-            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
-            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Baillistic</characteristic>
-            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="8eab-83f4-bfc0-39c7" name="Fusion Sword" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
-          <characteristics>
-            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
-            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
-            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
-            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
-            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="da5c-779f-ff2a-af03" name="CHARGE: Flight Pack" hidden="false">
-          <description>While charged, this model gains +3 SPD and Flight.</description>
-        </rule>
-        <rule id="ae2c-8a86-12e1-b6c4" name="SPIKE: Refractor Field" hidden="false">
-          <description>This model can spike to reroll a defense roll.</description>
-        </rule>
-        <rule id="1cec-d62d-47e0-e8af" name="Riposte" hidden="false">
-          <description>When this model is missed by a melee attack, after the attack is resolved, this model
-can immediately make an attack targeting the model that missed it.</description>
-        </rule>
-        <rule id="e6e6-93bc-8069-3ce8" name="Weapon Expert" hidden="false">
-          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
-        </rule>
-        <rule id="f1ed-84f9-2437-288f" name="Wild Card [Continuum and Marcher Worlds]" hidden="false">
-          <description>This unit can be includes in Continuum and Marcher Worlds forces.</description>
-        </rule>
-      </rules>
-      <categoryLinks>
-        <categoryLink id="e04a-4fe4-0c26-a352" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
-        <categoryLink id="c9d4-5d96-c4ff-adba" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
-      </categoryLinks>
-      <costs>
-        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
-      </costs>
-    </selectionEntry>
   </selectionEntries>
+  <catalogueLinks>
+    <catalogueLink id="ac75-0e26-52a4-9841" name="Wild Card Library" targetId="5c07-23bc-01ed-cfcf" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
 </catalogue>
