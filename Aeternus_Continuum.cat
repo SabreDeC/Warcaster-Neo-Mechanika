@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="144d-9a31-b801-c47a" name="Aeternus Continuum" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="144d-9a31-b801-c47a" name="Aeternus Continuum" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="af3c-2f5f-14b4-cac4" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="978c-7a2d-4fd4-1b3a" name="Vassal Reavers" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -49,6 +49,7 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="08ea-7c84-cd7d-2aa2" name="Vassal Witch Hunters" hidden="false" collective="false" import="true" type="upgrade">
@@ -93,6 +94,7 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b86c-f98c-b74b-d302" name="Immortal Weaver" hidden="false" collective="false" import="true" type="upgrade">
@@ -140,6 +142,7 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b8c7-5f63-73fd-7457" name="Grafter" hidden="false" collective="false" import="true" type="upgrade">
@@ -183,6 +186,7 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ed1-0167-1186-701e" name="Marauder" hidden="false" collective="false" import="true" type="upgrade">
@@ -238,6 +242,7 @@
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0164-05b7-f125-fb98" name="Nemesis" hidden="false" collective="false" import="true" type="upgrade">
@@ -279,6 +284,10 @@
               <description>When this model makes a ranged attack, immediately after the attack is resolved, this model can move up to 1&quot;</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7d37-4f9a-ba75-57f1" name="CORTEX: Impulse Reciprocator" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -286,6 +295,10 @@
               <description>When this model is targeted and hit by an enemy attack, it can spike to use Impulse Reciprocator. If this model uses Impulse Reciprocator, immediately after the attack is resolved, this model can make one attack.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="69f7-c1d2-c245-9cb5" name="Fusion Scythe" hidden="false" collective="false" import="true" type="upgrade">
           <profiles>
@@ -301,6 +314,7 @@
           </profiles>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a321-67ae-ee9d-4e73" name="Void Splitter" hidden="false" collective="false" import="true" type="upgrade">
@@ -322,6 +336,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b30f-f721-7aea-5ba4" name="Displacer" hidden="false" collective="false" import="true" type="upgrade">
@@ -343,6 +358,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a097-e78c-589d-502b" name="Hollowphage Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -364,6 +380,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="06e6-f34c-039e-ed27" name="Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -385,6 +402,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fed4-51de-d6c0-bed9" name="Starfall Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -406,11 +424,13 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="4.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="36e1-77b9-25df-c2db" name="Scourge" hidden="false" collective="false" import="true" type="upgrade">
@@ -468,6 +488,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="39d4-c698-a203-a627" name="Void Splitter" hidden="false" collective="false" import="true" type="upgrade">
@@ -489,6 +510,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5ce4-da6f-8e9a-bf63" name="Hollowphage Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -510,6 +532,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="3.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="99c0-9e94-6318-0a06" name="Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -531,6 +554,7 @@
           </rules>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="2.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6110-d487-e922-dd5a" name="Nailer" hidden="false" collective="false" import="true" type="upgrade">
@@ -547,6 +571,7 @@
           </profiles>
           <costs>
             <cost name="BP" typeId="c766-52f6-099f-696a" value="1.0"/>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b150-adc2-bcce-7900" name="CORTEX: Killer" hidden="false" collective="false" import="true" type="upgrade">
@@ -555,6 +580,10 @@
               <description>When this model destroys one or more enemy models wiht a melee attack, immediately after the attack is resolved, this model can move up to 2&quot;.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="0846-5968-e286-41f8" name="CORTEX: Revenger" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -562,10 +591,15 @@
               <description>While charged, this model ignores cover when making a ranged attack.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="0.0"/>
+            <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="2.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e9e9-3b50-3dbf-e9fd" name="Hierotheos Raxis" hidden="false" collective="false" import="true" type="upgrade">
@@ -617,6 +651,71 @@
       <categoryLinks>
         <categoryLink id="d2a4-9199-615c-c7e2" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
         <categoryLink id="b36d-e213-444b-ba74" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
+        <cost name="BP" typeId="c766-52f6-099f-696a" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b24d-ad2e-eaf3-1552" name="Baron Cassius Mooregrave" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f8a5-36fd-4da6-b806" name="Cassius Mooregrave" hidden="false" typeId="e330-dde8-f4eb-bee4" typeName="Trooper">
+          <characteristics>
+            <characteristic name="SPD" typeId="ca56-38f8-8f9d-3a15">6</characteristic>
+            <characteristic name="MAT" typeId="d2df-faa0-57ea-7424">5</characteristic>
+            <characteristic name="RAT" typeId="cd59-8434-9446-2b1e">4</characteristic>
+            <characteristic name="DEF" typeId="0f58-d38b-2f9f-c775">3</characteristic>
+            <characteristic name="ARM" typeId="4e8e-a0f0-55fd-1d63">4</characteristic>
+            <characteristic name="Damage" typeId="ed3e-a87a-0437-9474">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7e53-b88e-a9ea-9a7a" name="Magnum" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">8</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">4</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Ballistic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4153-1cfb-5b05-3c24" name="Oblivion" hidden="false" typeId="0690-5787-159e-cb7c" typeName="Weapon">
+          <characteristics>
+            <characteristic name="RNG" typeId="c9ac-ad7f-11bd-ef96">1</characteristic>
+            <characteristic name="POW" typeId="6cb9-05da-356b-c499">5</characteristic>
+            <characteristic name="Arm/Shoulder" typeId="cfe7-5bd7-ce0a-2af4"/>
+            <characteristic name="Damage Type" typeId="3d2e-c740-1aa6-72d7">Kinetic</characteristic>
+            <characteristic name="Attack" typeId="f06e-a5ce-199c-1553">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="ea44-9344-cde6-f4ea" name="Living Terror" hidden="false">
+          <description>This model gains +2 DEF against melee attacks made by warrior models.</description>
+        </rule>
+        <rule id="159a-ef71-985d-0ada" name="SPIKE: Phase Stalker" hidden="false">
+          <description>Once per activation, this model can spike to use Phase Stalker. When it does so, it can move up to 3˝ and make one additional attack.</description>
+        </rule>
+        <rule id="20f2-ef95-1c8b-a1fc" name="Weapon Expert" hidden="false">
+          <description>When this model attacks during its activation, it can attack with all of its weapons.</description>
+        </rule>
+        <rule id="670c-bab8-1909-11ed" name="Wild Card [Alliance and Continuum]" hidden="false">
+          <description>This unit can be included in Alliance and Continuum forces.</description>
+        </rule>
+        <rule id="f22b-21aa-a8ab-1d88" name="Oblivion: CHARGE: High Intensity" hidden="false">
+          <description>When this model makes an attack with this weapon while charged, add two power dice to the attack roll for each Arc on it instead of one.</description>
+        </rule>
+        <rule id="3af3-abc1-96b9-9e68" name="Oblivion: Gorge" hidden="false">
+          <description>When this model destroys a warrior model with an attack this weapon, remove 1 damage
+from this model.</description>
+        </rule>
+        <rule id="7548-aa18-052f-3bab" name="Oblivion: Siphon Power" hidden="false">
+          <description>When an attack with this weapon destroys an enemy model that was charged, you can immediately charge this model once the attack is resolved if this model was not already
+charged.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="737d-d048-2af0-0e7e" name="New CategoryLink" hidden="false" targetId="792c-d621-1a93-ab74" primary="true"/>
+        <categoryLink id="4a44-bb4b-d91d-8168" name="Solo" hidden="false" targetId="b02f-fb90-cc10-756e" primary="false"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="ad20-7a7b-ec32-4f4a" value="1.0"/>
